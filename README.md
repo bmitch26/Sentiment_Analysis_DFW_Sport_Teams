@@ -1,22 +1,23 @@
 # BERT and VADER for Sentiment Analysis of Dallas-Fort Worth Sport Teams
 
-2/8/2024 was a big day for Dallas-Fort Worth sports fans - On this day, the Cowboys hired a new defensive coordinator, the
-Rangers resigned one their all-star players, and the Mavericks traded for two key players right before the NBA trade 
-deadline. As a result, I was curious to find out fan sentiment for all three teams. As a result, I scraped the most recent
-Reddit data from all three teams and compared the results to see which set of fans are the most generally positive and
-negative about their team.
+On the day of 2/8/24, the Rangers re-signed one of their star players in Adolis
+Garcia, the Cowboys hired a new defensive coordinator, and the Mavericks traded for two new players at the trade deadline.
+As a result, I was curious to see recent fan sentiment given the big day of moves. To bring this to the test, I gathered the
+newest comments for each subreddit, I hypothesized that the fans of each team would show positivity for the new moves that 
+each team had made.
 
-I predicted that each team would show a mostly positive sentiment about their team, with the Rangers showing the most. The
-Rangers are coming off of their first World Series win and after months of waiting, finally re-signed arguably their best
-playoff contributor. As for the Cowboys, I predicted that their fans would show the most negative sentiment towards their team,
-as they suffered a huge playoff loss and the new defensive coordinator hire may be a bit controversial.
+The VADER model was modertately effective in accurately sorting comments when analyzing various comment samples of each
+category. It generally sorted positive vs. negative comments accurately, but it did not show effectiveness in determining 
+sentiment of a large number of comments for comments scraped from all 3 subreddits. Therefore, definitive conclusions cannot
+be drawn. It generally characterized all 3 teams as mostly showing a positive sentiment.
 
-As for the VADER model, I predicted that it will show a very high level of accuracy in predicting sentiment of the web scraped
-Reddit comments due to its high level of previous training data and its well-known regard for sentiment analysis.
+The BERT model, although not perfect, and trading off for a much greater training time, proved far more reliable in sorting
+comments when analyzing various comment samples. While the VADER model characterized all three subreddits as generally 
+positive, the BERT model characterized all three as showing a majority amount of comments as neutral, with the Rangers then
+showing more positive comments than negative, and the Cowboys and Mavericks being mostly negative. Although this disproves
+my hypothesis, the sentiments make sense when realizing that the Rangers had just won their first World Series, the 
+Mavericks had been struggling lately, and the Cowboys had just been eliminated early in the playoffs when they had been 
+expected to contend for a championship.
 
-My hypothesis for the teams proved true - that is, the Rangers showed the greatest ratio of positive-to-negative comments. On
-the other hand, the Cowboys had the worst positive-to-ratio.
-
-As for the VADER model, my hypothesis was moderately accurate. The model inaccurately classified some comments, and it had
-trouble classifying any score at all for a number of other comments as well. Therefore, definitive numbers cannot be
-conclusively drawn from the model, but general conclusions can be.
+In all, although more computationally expensive, I believe the BERT model showed greater results, and for this set of data
+was the best choice.
