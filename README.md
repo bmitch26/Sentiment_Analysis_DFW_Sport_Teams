@@ -1,4 +1,4 @@
-# Sentiment Analysis of Dallas-Fort Worth Sport Teams
+# BERT and VADER for Sentiment Analysis of Dallas-Fort Worth Sport Teams
 
 2/8/2024 was a big day for Dallas-Fort Worth sports fans - On this day, the Cowboys hired a new defensive coordinator, the
 Rangers resigned one their all-star players, and the Mavericks traded for two key players right before the NBA trade 
