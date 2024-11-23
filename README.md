@@ -1,4 +1,4 @@
-# BERT and VADER for Sentiment Analysis of Dallas-Fort Worth Sports Teams
+# A Sentiment Analysis of Dallas-Fort Worth Sports Teams using Transformers
 
 On the day of 2/8/24, the Rangers re-signed one of their star players in Adolis
 Garcia, the Cowboys hired a new defensive coordinator, and the Mavericks traded for two new players at the trade deadline.
